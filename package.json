@@ -1,9 +1,19 @@
 {
   "name": "CatterBackend",
   "version": "1.0.0",
+  "author": "Konrad Bosak, Aleksandra Madej",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "latest",
     "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "chai": "^4.2.0",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha ./tests --recursive"
   }
 }
