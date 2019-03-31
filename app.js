@@ -20,7 +20,10 @@ app.get("/api/v1/hello", (req, res) => {
     })
 });
 
-const PORT = 3000;
+
+app.use("/api/v1/", apiRoutes);
+
+const PORT = 3001;
 app.listen(PORT, () =>{
     console.log(`Server listening on port ${PORT}`)
 });
